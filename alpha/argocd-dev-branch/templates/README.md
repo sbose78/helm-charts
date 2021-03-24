@@ -24,7 +24,7 @@ argo-cd-1   Docker   Git@12a1e0b   Running   12 minutes ago
 ```
 
 
-4. Find the deployed Ingress/Route by doing an `oc get route argocd'
+4. Find the deployed Ingress/Route by doing an `oc get route argocd`
 
 ```
 oc get routes 
