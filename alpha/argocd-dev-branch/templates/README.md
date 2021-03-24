@@ -15,19 +15,19 @@ helm install --generate-name  argocd-dev-branch --set source_url=https://github.
 ### Navigate
 
 
-3. Wait for the build to finish 
+3. Wait for the image to be built:
 
 ```
-oc get builds
+$ kubectl get builds
 NAME        TYPE     FROM          STATUS    STARTED          DURATION
 argo-cd-1   Docker   Git@12a1e0b   Running   12 minutes ago   
 ```
 
 
-4. Find the deployed Ingress/Route by doing an `oc get route argocd`
+4. Find the deployed Ingress/Route by doing an `oc get route argocd`:
 
 ```
-oc get routes 
+$ kubectl get routes 
 NAME     HOST/PORT                                                    PATH   SERVICES        PORT    TERMINATION        WILDCARD
 argocd   argocd-t4.apps.dev-svc-4.8-032414.devcluster.openshift.com          argocd-server   https   passthrough/None   None
 ```
