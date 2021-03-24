@@ -4,7 +4,7 @@ metadata:
   annotations:
     alpha.image.policy.openshift.io/resolve-names: '*'
     image.openshift.io/triggers: >-
-        [{"from":{"kind":"ImageStreamTag","name":"argo-cd:latest"},"fieldPath":"spec.template.spec.containers[?(@.name==\"argo-cd\")].image","pause":"false"}]
+        [{"from":{"kind":"ImageStreamTag","name":"argocd-repo-server:latest"},"fieldPath":"spec.template.spec.containers[?(@.name==\"argo-cd\")].image","pause":"false"}]
   labels:
     app.kubernetes.io/component: repo-server
     app.kubernetes.io/name: argocd-repo-server
