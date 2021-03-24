@@ -15,7 +15,7 @@ helm install --generate-name  argocd-dev-branch --set source_url=https://github.
 ### Navigate
 
 
-4. Wait for the build to finish 
+3. Wait for the build to finish 
 
 ```
 oc get builds
@@ -24,7 +24,7 @@ argo-cd-1   Docker   Git@12a1e0b   Running   12 minutes ago
 ```
 
 
-5. Find the deployed Ingress/Route by doing an `oc get route argocd'
+4. Find the deployed Ingress/Route by doing an `oc get route argocd'
 
 ```
 oc get routes 
