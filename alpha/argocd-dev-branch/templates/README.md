@@ -11,6 +11,8 @@
 helm install --generate-name  argocd-dev-branch --set source_url=https://github.com/farodin91/argo-cd --set ref=health-checks-cluster-api
 ```
 
+And that's it, go get coffee while ArgoCD is being built and deployed from the branch.
+
 
 ### Navigate
 
