@@ -1,0 +1,6 @@
+# Default values for argocd-dev-branch.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+source_url: https://github.com/argoproj/argo-cd
+ref: master
