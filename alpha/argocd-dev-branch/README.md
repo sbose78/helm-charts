@@ -8,7 +8,7 @@
 2. Grab the branch associated with it and run the following in the context of namespace `foo`.
 
 ```
-helm install --generate-name  argocd-dev-branch --set source_url=https://github.com/farodin91/argo-cd --set ref=health-checks-cluster-api
+helm install --generate-name https://sbose78.github.com/helm-charts/charts/argocd-dev-branch-0.1.2.tgz --set source_url=https://github.com/farodin91/argo-cd --set ref=health-checks-cluster-api
 ```
 
 And that's it, go get coffee while ArgoCD is being built and deployed from the branch.
