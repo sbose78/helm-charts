@@ -1,14 +1,14 @@
 apiVersion: v1
 entries:
-  argocd-dev-branch:
+  argocd-src:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2021-03-25T00:28:41.08425-04:00"
-    description: A Helm chart for building ArgoCD from source on OpenShift
-    digest: dde7b00e6f146d783bce91867a58d3125c92ad4150c1a87dace661b4899e34d9
-    name: argocd-dev-branch
+    appVersion: "2.1"
+    created: "2021-10-20T17:03:49.56198-04:00"
+    description: A Helm chart for deploying Argo CD from source code
+    digest: 9868980891947884df40aa1495ebcb19d016459c7032154956a69d56659a73f8
+    name: argocd-src
     type: application
     urls:
-    - https://sbose78.github.com/helm-charts/charts/argocd-dev-branch-0.1.2.tgz
-    version: 0.1.2
-generated: "2021-03-25T00:28:41.082622-04:00"
+    - https://sbose78.github.io/helm-charts/charts/argocd-src-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-10-20T17:03:49.560043-04:00"
