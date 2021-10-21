@@ -17,26 +17,37 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   creationTimestamp: "2021-10-20T19:30:56Z"
-  name: do-it-all
+  name: read-it-all
 rules:
 - apiGroups:
   - '*'
   resources:
   - '*'
   verbs:
-  - '*'
+  - 'get'
+  - 'list'
+  - 'watch'
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: argocd-do-it-all
+  name: argocd-read-it-all
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
-  name: do-it-all
+  name: read-it-all
 subjects:
 - kind: ServiceAccount
   name: argocd-application-controller
-
-
-  
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: local-admin
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: admin
+subjects:
+- kind: ServiceAccount
+  name: argocd-application-controller

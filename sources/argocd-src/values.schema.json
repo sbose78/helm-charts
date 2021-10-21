@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "properties": {
+        "source_url": {
+            "type": "string",
+            "description": "The Github repo URL"
+        },
+        "ref":{
+            "type": "string",
+            "description": "Name of the Git branch/ref"
+        }
+    }
+}
