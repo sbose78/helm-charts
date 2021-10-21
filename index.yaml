@@ -1,9 +1,20 @@
 apiVersion: v1
 entries:
+  argocd-source:
+  - apiVersion: v2
+    appVersion: "2.1"
+    created: "2021-10-21T11:47:28.583299-04:00"
+    description: A Helm chart for building & deploying Argo CD from source code
+    digest: ec2e619892ee818105090991a9add1b4336fece9a8f787eccc5a3a23e60fba68
+    name: argocd-source
+    type: application
+    urls:
+    - https://sbose78.github.io/helm-charts/charts/argocd-source-0.1.0.tgz
+    version: 0.1.0
   argocd-src:
   - apiVersion: v2
     appVersion: "2.1"
-    created: "2021-10-21T01:33:51.072993-04:00"
+    created: "2021-10-21T11:47:28.584672-04:00"
     description: A Helm chart for deploying Argo CD from source code
     digest: 8ef369022c577250e6e1794f14546fc362c960e9cb42478ec51d0e62990f6f68
     name: argocd-src
@@ -11,4 +22,4 @@ entries:
     urls:
     - https://sbose78.github.io/helm-charts/charts/argocd-src-0.1.0.tgz
     version: 0.1.0
-generated: "2021-10-21T01:33:51.072185-04:00"
+generated: "2021-10-21T11:47:28.581616-04:00"

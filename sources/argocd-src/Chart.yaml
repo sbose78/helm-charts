@@ -1,6 +1,6 @@
 apiVersion: v2
-name: argocd-src
-description: A Helm chart for deploying Argo CD from source code
+name: argocd-source
+description: A Helm chart for building & deploying Argo CD from source code
 
 # A chart can be either an 'application' or a 'library' chart.
 #
